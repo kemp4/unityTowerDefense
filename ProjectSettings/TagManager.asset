@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Road
   - Enemy
+  - Points
+  - Dollars
+  - Tower
   layers:
   - Default
   - TransparentFX

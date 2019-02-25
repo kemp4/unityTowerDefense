@@ -9,89 +9,60 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1835030339667430}
+  m_RootGameObject: {fileID: 1157525489186130}
   m_IsPrefabParent: 1
---- !u!1 &1835030339667430
+--- !u!1 &1157525489186130
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4273370429573744}
-  - component: {fileID: 212211645826717314}
-  - component: {fileID: 61553304301439434}
-  - component: {fileID: 114902049967600092}
+  - component: {fileID: 4527007025896342}
+  - component: {fileID: 212565033353160702}
+  - component: {fileID: 114072926384564082}
   m_Layer: 0
-  m_Name: Canon
+  m_Name: rocketBul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4273370429573744
+--- !u!4 &4527007025896342
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1835030339667430}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.5, y: -4.5, z: 0}
+  m_GameObject: {fileID: 1157525489186130}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.5, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61553304301439434
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1835030339667430}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &114902049967600092
+--- !u!114 &114072926384564082
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1835030339667430}
+  m_GameObject: {fileID: 1157525489186130}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f1e913a39a97e45abb4438ebd77167, type: 3}
+  m_Script: {fileID: 11500000, guid: 236bdcd01c9f8b647872499d671765d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canon: {fileID: 0}
-  active: 0
-  isPlaced: 0
-  grid: {fileID: 0}
-  bullet1: {fileID: 4562328213608508, guid: b2e5d399b2399b94299d5d48490477b0, type: 2}
-  loadSpeed: 300
-  range: 3
-  pointsValue: 20
---- !u!212 &212211645826717314
+  enemyTarget: {fileID: 0}
+  velocity: 3
+  damage: 34
+  aoeRange: 2
+  explosion: {fileID: 1129649044923734, guid: 9c1204eb7b1355f49bc0bab77b8f2b14, type: 2}
+--- !u!212 &212565033353160702
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1835030339667430}
+  m_GameObject: {fileID: 1157525489186130}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -120,7 +91,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: aea5d10db78a71f43b202c845db3414e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0e167e058ffcd234a8ed9d131f0cef3b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

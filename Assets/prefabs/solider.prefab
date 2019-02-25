@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4982441639098258}
   - component: {fileID: 212881003652754872}
-  - component: {fileID: 114080958975514788}
+  - component: {fileID: 114170841327248480}
   m_Layer: 0
   m_Name: solider
   m_TagString: Enemy
@@ -71,7 +71,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114080958975514788
+--- !u!114 &114170841327248480
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -83,6 +83,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roads: []
+  health: 100
+  pointsValue: 15
 --- !u!212 &212002761759160760
 SpriteRenderer:
   m_ObjectHideFlags: 1
